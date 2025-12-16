@@ -1,0 +1,133 @@
+{
+    // ========================================
+    // WORKBENCH - Configuración del entorno de trabajo
+    // ========================================
+    // Permite arrastrar pestañas para abrir en nueva ventana
+    "workbench.editor.dragToOpenWindow": true,
+    // Desactiva vista previa de archivos (abre directamente en pestaña permanente)
+    "workbench.editor.enablePreview": false,
+    // Define qué se muestra al iniciar VS Code (página de bienvenida en workspace vacío)
+    "workbench.startupEditor": "welcomePageInEmptyWorkbench",
+    // Desactiva el scroll pegajoso en el árbol de archivos
+    "workbench.tree.enableStickyScroll": false,
+    // Define la indentación visual del árbol de archivos (en píxeles)
+    "workbench.tree.indent": 20,
+    // Muestra siempre las guías de indentación en el explorador
+    "workbench.tree.renderIndentGuides": "always",
+    // ========================================
+    // EDITOR - Configuración de edición de código
+    // ========================================
+    // Fuente del editor con ligaduras tipográficas
+    "editor.fontFamily": "JetBrains Mono",
+    "editor.fontLigatures": true,
+    "editor.fontSize": 15,
+    "editor.lineHeight": 1.8,
+    // Colorización de pares de corchetes/paréntesis
+    "editor.bracketPairColorization.enabled": true,
+    "editor.guides.highlightActiveBracketPair": true,
+    "editor.guides.bracketPairsHorizontal": true,
+    // Permite editar automáticamente etiquetas HTML/XML relacionadas
+    "editor.linkedEditing": true,
+    // Desactiva el borde del indicador de visión general
+    "editor.overviewRulerBorder": false,
+    // Desactiva el minimapa lateral
+    "editor.minimap.enabled": false,
+    // Desactiva el scroll pegajoso (mostrar contexto superior fijo)
+    "editor.stickyScroll.enabled": false,
+    // Formateo automático al pegar y guardar
+    "editor.formatOnPaste": true,
+    "editor.formatOnSave": true,
+    // Oculta los controles de plegado de código
+    "editor.showFoldingControls": "never",
+    // Animaciones suaves del cursor
+    "editor.cursorBlinking": "smooth",
+    "editor.cursorSmoothCaretAnimation": "on",
+    // Desactiva resaltado de caracteres Unicode no básicos
+    "editor.unicodeHighlight.nonBasicASCII": false,
+    // ========================================
+    // EXPLORER - Configuración del explorador de archivos
+    // ========================================
+    // Desactiva la compactación de carpetas anidadas con un solo elemento
+    "explorer.compactFolders": false,
+    // Desactiva confirmaciones al eliminar y arrastrar archivos
+    "explorer.confirmDelete": false,
+    "explorer.confirmDragAndDrop": false,
+    // ========================================
+    // WINDOW - Configuración de la ventana
+    // ========================================
+    // Detecta automáticamente el esquema de color del sistema (claro/oscuro)
+    "window.autoDetectColorScheme": true,
+    // Desactiva el centro de comandos en la barra de título
+    "window.commandCenter": false,
+    // Formato del título de la ventana: nombre_archivo | carpeta_raíz | rama_git
+    "window.title": "${activeEditorShort}${separator}${rootName}${separator}${activeRepositoryBranchName}",
+    // ========================================
+    // FILES - Configuración de formato de archivos
+    // ========================================
+    // Inserta una línea en blanco al final del archivo
+    "files.insertFinalNewline": true,
+    // Elimina líneas en blanco adicionales al final del archivo
+    "files.trimFinalNewlines": true,
+    // Elimina espacios en blanco al final de cada línea
+    "files.trimTrailingWhitespace": true,
+    // Asociaciones de tipos de archivo
+    "files.associations": {
+        "*.module": "php"
+    },
+    // ========================================
+    // LANGUAGES - Configuración de lenguajes de programación
+    // ========================================
+    // Blade (PHP Laravel)
+    "blade.format.enable": true,
+    // JavaScript & TypeScript - Preferencias de estilo
+    "javascript.preferences.quoteStyle": "single",
+    "typescript.preferences.quoteStyle": "single",
+    "javascript.format.semicolons": "remove",
+    "typescript.format.semicolons": "remove",
+    "javascript.updateImportsOnFileMove.enabled": "always",
+    // Emmet - Expansión de abreviaturas
+    "emmet.triggerExpansionOnTab": true,
+    "emmet.includeLanguages": {
+        "blade.php": "html"
+    },
+    // ========================================
+    // FORMATTERS - Formateadores por lenguaje
+    // ========================================
+    "[javascript]": {
+        "editor.defaultFormatter": "vscode.typescript-language-features"
+    },
+    "[css]": {
+        "editor.defaultFormatter": "vscode.css-language-features"
+    },
+    "[php]": {
+        "editor.defaultFormatter": "bmewburn.vscode-intelephense-client"
+    },
+    "[jsonc]": {
+        "editor.defaultFormatter": "vscode.json-language-features"
+    },
+    // ========================================
+    // TERMINAL - Configuración de la terminal integrada
+    // ========================================
+    // Estilo del cursor en la terminal (línea vertical)
+    "terminal.integrated.cursorStyle": "line",
+    // Perfil de terminal por defecto en Windows
+    "terminal.integrated.defaultProfile.windows": "PowerShell",
+    // Fuente de la terminal (con iconos Nerd Font)
+    "terminal.integrated.fontFamily": "JetBrainsMono Nerd Font",
+    "terminal.integrated.fontSize": 16,
+    "terminal.integrated.lineHeight": 1,
+    // ========================================
+    // TESTING - Configuración de pruebas
+    // ========================================
+    // Abre automáticamente la vista previa cuando falla una prueba
+    "testing.automaticallyOpenPeekView": "failureAnywhere",
+    // Abre el explorador de resultados al iniciar las pruebas
+    "testing.automaticallyOpenTestResults": "openExplorerOnTestStart",
+    // ========================================
+    // OTROS - Configuraciones adicionales
+    // ========================================
+    // No ignora espacios en blanco al comparar diferencias
+    "diffEditor.ignoreTrimWhitespace": false,
+    // Ignora recomendaciones de extensiones
+    "extensions.ignoreRecommendations": true
+}
